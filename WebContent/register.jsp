@@ -28,7 +28,7 @@
 				<div style="font-weight: bold;" class="text-center">
 					<h2 style="color: green; font-weight:bold; top-margin:25px;">Registration Form</h2>
 					<%
-					if (message != null) {
+					if (massage != null) {
 					%>
 					<p style="color: blue;">
 						<%=message%>
