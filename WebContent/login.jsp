@@ -3,12 +3,18 @@
 <!DOCTYPE html>
 <html>
 <head>
+<!--page title-->
 <title>Login</title>
+<!--boostrap css for styling and layout-->
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<!--custom css file for additonal style-->
 <link rel="stylesheet" href="css/changes.css">
+<!--jquery library-->
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!--boostrap java script for additional components and responsivenes-->
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>
@@ -19,6 +25,7 @@
 	<%
 	String message = request.getParameter("message");
 	%>
+<!-- main container for ligin form-->
 	<div class="container">
 		<div class="row"
 			style="margin-top: 5px; margin-left: 2px; margin-right: 2px;">
@@ -27,6 +34,7 @@
 				style=" border-radius: 10px; background-color: #fff; padding: 10px;">
 				<div style="font-weight: bold;" class="text-center">
 					<h2 style="color: #4CAF50; font-weight: bold; font-family: Garamond, serif;">Login</h2>
+                                        <!--display massage if available-->
 					<%
 					if (message != null) {
 					%>
@@ -37,7 +45,7 @@
 					}
 					%>
 				</div>
-				<div></div>
+				<!-- username input field-->
 				<div class="row">
 					<div class="col-md-12 form-group">
 						<label for="last_name">Username</label> <input type="email"
@@ -45,6 +53,7 @@
 							id="last_name" required>
 					</div>
 				</div>
+    				<-- password input field-->
 				<div class="row">
 					<div class="col-md-12 form-group">
 						<label for="last_name">Password</label> <input type="password"
@@ -52,6 +61,7 @@
 							id="last_name" required>
 					</div>
 				</div>
+				<!-- user role selection-->
 				<div class="row">
 					<div class="col-md-12 form-group">
 						<label for="userrole">Login As</label> <select name="usertype"
@@ -61,6 +71,7 @@
 						</select>
 					</div>
 				</div>
+				<!--submit button-->
 				<div class="row">
 					<div class="col-md-12 text-center">
 						<button type="submit" class="btn btn-success">Login</button>
