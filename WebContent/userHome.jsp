@@ -57,7 +57,7 @@
 		style="color: black; font-size: 25px; font-weight: bold;"><%=message%></div>
 	<!-- <script>document.getElementById('mycart').innerHTML='<i data-count="20" class="fa fa-shopping-cart fa-3x icon-white badge" style="background-color:#333;margin:0px;padding:0px; margin-top:5px;"></i>'</script>
  -->
-	<!-- Start of Product Items List -->
+	<!-- Start of product of Items List -->
 	<div class="container">
 		<div class="row text-center">
 
